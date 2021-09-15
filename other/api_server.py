@@ -48,6 +48,9 @@ class LoginHandler(RequestHandler):
     def delete(self):
         pass
 
+    def options(self, *args, **kwargs):
+        self.set_status(200)
+
 def make_app():
     return Application(
         handlers = [
