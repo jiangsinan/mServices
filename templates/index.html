@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>index</title>
-</head>
-<body>
-我是主页
-<p>
-    {{msg}}
-</p>
-</body>
-</html>
+{% extends 'base.html' %}
+{% block content %}
+<div id="left">
+    {% module Menu() %}
+</div>
+<div id="right">
+    <iframe name="content" frameborder="0">
+
+    </iframe>
+</div>
+{% end %}
