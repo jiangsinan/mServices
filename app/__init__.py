@@ -9,6 +9,8 @@ from app.views.order_v import OrderHandler
 from app.views.search_v import SearchHandler
 from app.views.download import DownloadHandler
 from app.views.download import AsyncDownHandler
+from app.views.message import MessageHandler,RobbitHandler
+
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -28,6 +30,8 @@ def make_app(host='localhost'):
         ('/search', SearchHandler),
         ('/cookie', CookieHandler),
         ('/download',AsyncDownHandler),
+        ('/robbit',RobbitHandler),
+        ('/message',MessageHandler),
         (r'/order/(?P<action_code>\d+)/(?P<order_id>\d+)',OrderHandler),
     ],
         default_host=host,**settings)

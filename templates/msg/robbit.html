@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>客服在线</title>
+    <style>
+        .success{
+            color: green;
+        }
+        .error{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h1>网上咨询</h1>
+<div id="message_body">
+
+</div>
+<div>
+    您的幸运数字：<span id="number"></span>
+</div>
+<script>
+    function $(id) {
+        return document.getElementById(id)
+    }
+
+    window.onload = function (ev) {
+        var socket = new WebSocket('ws://localhost:8000/message')
+        socket.onopen = function (evt) {
+
+        }
+        var numberIsStart = false
+        socket.onmessage = function (evt) {
+            data = evt.data
+            if (data === 'starting'){
+                numberIsStart = true
+            }else if(data === 'end' ){
+                numberIsStart = false
+            }else if(numberIsStart){
+                if (parseInt(data) <=200){
+                    $('number').setAttribute('class','error')
+                }else {
+                    $('number').setAttribute('class','success')
+                }
+                $('number').innerText = data
+            }else {
+                $('message_body').innerHTML += '<br>' + data
+            }
+
+        }
+        socket.onerror = function (evt) {
+            console.log(evt)
+        }
+    }
+
+</script>
+</body>
+</html>
