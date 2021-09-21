@@ -11,7 +11,10 @@ class Menu(Base):
     url = Column(String(50), unique=True)
     note = Column(Text)
 
-    parent_id = Column(Integer, ForeignKey('menu.id', name='parent_id_fk'), default=0, server_default='0')
+    parent_id = Column(Integer, ForeignKey('menu.id', name='parent_id_fk'))
 
-    childs = relationship('Menu', backref='parent')
+    childs = relationship('Menu')
+
+    def __str__(self):
+        return self.title
 

@@ -1,12 +1,9 @@
 from tornado.web import UIModule
-
+from utils.conn import session
+from app.models.menu_m import Menu
 class MenuModule(UIModule):
     def render(self, *args, **kwargs):
         data = {
-            'menus':[
-                {'title':'百度','url':'https://www.baidu.com'},
-                {'title':'京东','url':'https://www.jd.com'},
-                {'title':'阿里','url':'https://www.aliyun.com'}
-            ]
+            'menus':session.query(Menu).filter(Menu.parent_id.is_(None)).all()
         }
         return self.render_string('ui/menu.html',**data)
