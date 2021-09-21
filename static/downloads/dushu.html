@@ -1,0 +1,705 @@
+﻿
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head><title>
+	读书网 - dushu.com
+</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="renderer" content="webkit" /><link rel="shortcut icon" href="https://www.dushu.com/favicon.ico" type="image/x-icon" /><link rel="stylesheet" href="https://a.dushu.com/css/core.min.css?v=20160809" /><link rel="stylesheet" href="https://a.dushu.com/css/dushu.min.css?v=20160802" /><link rel="stylesheet" href="//at.alicdn.com/t/font_1468833227_139596.css" />
+	<script lang="javascript" type="text/javascript" src="https://cdn.staticfile.org/jquery/1.11.3/jquery.min.js"></script>
+    <script lang="javascript" type="text/javascript" src="https://a.dushu.com/js/superslide.min.js"></script>
+    <script lang="javascript" type="text/javascript" src="https://a.dushu.com/js/detectmobilebrowser.js"></script>
+    <script>
+        if(jQuery.browser.mobile){
+            window.location.href = "https://m.dushu.com/";
+        }
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?8008bbd51b8bc504162e1a61c3741a9d";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+</script>
+<meta name="description" content="读书网-全民阅读门户，专业中文图书搜索引擎,在线读书,提供各类免费电子书及图书导购服务" /><meta name="keywords" content="读书,读书网,免费读书,免费阅读,免费下载,读书网,免费电子书" /><link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.dushu.com" /></head>
+<body>		
+<div class="layout bg border-bottom">
+<div class="container height-big text-gray"><span class="float-right"><a href="#" class="text-gray">注册</a>  <span class="text-little">|</span>  <a href="#" class="text-gray">登录</a></span>读书好，好读书，读好书！</div>
+</div>
+<div class="layout bg border-bottom fixed-top hidden" style="z-index: 99;" id="fixednav">
+    <div class="container"><div class="row">
+     <div class="span4"><a href="https://www.dushu.com/" title="读书网"><img src="https://a.dushu.com/img/logo1.png" alt="读书网-DuShu.com" /></a></div>	
+    <div class="span13">
+    <ul class="nav nav-inline nav-menu padding-top">
+    <li><a href="https://www.dushu.com">首页</a></li>
+	<li><a href="/news/">新闻资讯</a></li>
+    <li><a href="/lianzai/">在线读书</a></li>
+    <li><a href="/meiwen/">每日一读</a></li>
+	<li><a href="/guoxue/">国学/古籍</a></li>
+	<li><a href="/book/">出版图书</a> </li>
+		
+	<li><a href="/daohang/">读书导航</a></li>
+    </ul>
+    </div>  
+        <div class="span7 text-right">         
+                <form name="searchform" action="/search.aspx">
+                <div class="input-group padding-small-top">                	
+                    <input type="text" class="wd input border-main" name="wd" value="" autocomplete="off" size="30" placeholder="搜索海量图书" />
+                    <span class="addbtn"><button class="button bg-main"><span class="icon-search"></span></button></span>
+                </div>
+                </form>            
+        </div></div></div></div>
+<div class="container"><div class="row">
+        <div class="span8"><a href="https://www.dushu.com/" title="读书网"><img src="https://a.dushu.com/img/logo.png" alt="读书网-DuShu.com" /></a></div>
+        <div class="span10 padding-big-top">         
+                <form name="searchform" action="/search.aspx">      	
+                <div class="input-group padding-little-top margin-big-right">                	
+                    <input type="text" name="wd" class="wd input input-big border-main" value="" size="30" placeholder="搜索海量图书" />
+                    <span class="addbtn"><button class="button button-big bg-main" id="search_button"><span class="icon-search text-large"></span></button></span>
+                </div>
+                </form>            
+        </div>
+        <div class="span6 padding-large-top text-right">
+               <div class="button-group">
+				<button type="button" class="button text-main"><span class="icon-user"></span> 我的账户</button>
+				<button type="button" class="button text-main"><span class="icon-shujia"></span> 我的书架</button>
+				</div>       
+        </div></div></div>
+
+
+<div class="container">
+<div class="row margin-top">
+<div class="span24">
+<ul class="nav nav-menu nav-inline nav-sub nav-big nav-navicon nav-justified border-dot">
+	<li id="ctl00_c1_nav_index" class="active"><a href="https://www.dushu.com">首页</a></li>
+	<li id="ctl00_c1_nav_news"><a href="/news/">新闻资讯</a></li>
+    <li id="ctl00_c1_nav_lianzai"><a href="/lianzai/">在线读书</a></li>
+    <li id="ctl00_c1_nav_meiwen"><a href="/meiwen/">每日一读</a></li>
+	<li id="ctl00_c1_nav_guoxue"><a href="/guoxue/">国学/古籍</a></li>
+	<li id="ctl00_c1_nav_book"><a href="/book/">出版图书</a> </li>
+	
+	<li id="ctl00_c1_nav_daohang"><a href="/daohang/">读书导航</a></li>
+</ul>
+
+
+</div>
+
+
+
+</div>
+</div>
+<div class="container margin-big-top">
+<div class="row"><div class="span12">
+<div class="focusbox" style="width:590px; height:320px;"><ul class="slide">
+
+     <li><a href="/meiwen/" target="_blank"><img src="https://pic.dushu.com/202003/08/202003081223210940.jpg" title="每日一读"></a></li>		
+	 
+     <li><a href="/guoxue/" target="_blank"><img src="https://pic.dushu.com/201608/13/201608131653003491.png" title="国学"></a></li>		
+	 
+     <li><a href="/zhuanti/3.html" target="_blank"><img src="https://pic.dushu.com/201608/13/201608131654472126.jpg" title="人生必读的60本书"></a></li>		
+	 
+</ul>
+    <a class="prev icon-fanhui1" href="javascript:void(0)"></a>
+    <a class="next icon-fanhui2" href="javascript:void(0)"></a>
+    <ul class="hd"><li></li><li></li><li></li></ul>
+</div>
+<script type="text/javascript">
+    jQuery(".focusbox").hover(function () { jQuery(this).find(".prev,.next").stop(true, true).show() }, function () { jQuery(this).find(".prev,.next").fadeOut() }); jQuery(".focusbox").slide({ mainCell: ".slide", effect: "fold", autoPlay: true, delayTime: 600 });
+</script>
+</div>
+<div class="span4">    
+
+     <div class="margin-bottom"><a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFDJWWA1FBCVbV0IUWVALHFNECwQAQB1AWQkFB0VfTxkFSR5NRUYZUBw8V0ZQATdaIXZUZ1Qdaz9NR2V%2BAWggSkdLQ0tDBEBWWxgMXgdIMlp0JmVadmV6ZD59HFRJTnsuTBh0VFQLWStTFAIXDlEeWhUyEg" target="_blank"><img src="https://pic.dushu.com/202004/23/202004231051342219.png" title="jd专题"></a></div>
+	 
+     <div class="margin-bottom"><a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFDJWWA1FBCVbV0IUWVALHFNECwQAQB1AWQkFB0VfTxkFSR5NRUYZVhwmHFBMQjNELx0Fa3s%2BSQ1qUWtDFkgHYWlWVUtDBEBWWxgMXgdIMlBdUEIfbV1mZw1DXEdAeR1RaTBiWGILWStTFAIXDlEeWhUyEg" target="_blank"><img src="https://pic.dushu.com/202004/23/202004231052467860.png" title="书单"></a></div>
+	 
+     <div><a href="http://union.dangdang.com/transfer/transfer.aspx?from=P-219836&backurl=http://book.dangdang.com/" target="_blank"><img src="https://pic.dushu.com/202004/23/202004231053578345.png" title="dd"></a></div>
+	 
+</div>
+<div class="span8" style="padding-left: 9px;">
+    <div class="tab">
+	<div class="tab-head">
+		<ul class="tab-nav">
+			<li><a href="#tab1">图书分类</a> </li>
+			<li><a href="#tab2">国学经典</a> </li>
+			<li><a href="#tab3">读书导航</a> </li>
+		</ul>
+	</div>
+	<div class="tab-body">
+		<div class="tab-panel" id="tab1">
+		<div class="class-nav">
+    <a href="/book/1617.html" target="_blank"><span>国学入门</span></a>
+    <a href="/book/1158.html" target="_blank"><span>文学史</span></a>
+    <a href="/book/1161.html" target="_blank"><span>纪实文学</span></a>
+    <a href="/book/1163.html" target="_blank"><span>散文随笔</span></a>
+    <a href="/book/1175.html" target="_blank"><span>世界名著</span></a>
+    <a href="/book/1176.html" target="_blank"><span>外国小说</span></a>
+    <a href="/book/1179.html" target="_blank"><span>言情小说</span></a>
+    <a href="/book/1181.html" target="_blank"><span>历史小说</span></a>
+    <a href="/book/1188.html" target="_blank"><span>当代小说</span></a>
+    <a href="/book/1206.html" target="_blank"><span>网络小说</span></a>
+    <a href="/book/1611.html" target="_blank"><span>青春言情</span></a>
+    <a href="/book/1081.html" target="_blank"><span>人物传记</span></a>
+    <a href="/book/1211.html" target="_blank"><span>艺术理论</span></a>
+    <a href="/book/1214.html" target="_blank"><span>书法/篆刻</span></a>   
+    <a href="/book/1158.html" target="_blank"><span>文学史</span></a>
+    <a href="/book/1215.html" target="_blank"><span>绘画</span></a>
+    <a href="/book/1222.html" target="_blank"><span>收藏鉴赏</span></a>
+    <a href="/book/1005.html" target="_blank"><span>生活时尚</span></a>
+    <a href="/book/1085.html" target="_blank"><span>社会科学</span></a>
+    <a href="/book/1087.html" target="_blank"><span>法律</span></a>
+     <a href="/book/1008.html" target="_blank"><span>少儿/童书</span></a>
+    <a href="/book/1003.html" target="_blank"><span>人文社科</span></a>
+    <a href="/book/1090.html" target="_blank"><span>历史</span></a>
+    <a href="/book/1004.html" target="_blank"><span>经济管理</span></a>
+    <a href="/book/1104.html" target="_blank"><span>工业技术</span></a>
+    <a href="/book/1094.html" target="_blank"><span>自我实现/励志</span></a>
+    <a href="/book/1107.html" target="_blank"><span>计算机/网络</span></a>
+    <a href="/book/" target="_blank"><span><label class="icon-arrow-right"></label> 更多</span></a>
+</div></div>
+		<div class="tab-panel" id="tab2">
+		<div class="class-nav">
+    <a href="/guoxue/103785/" target="_blank"><span>红楼梦</span></a>
+    <a href="/guoxue/103786/" target="_blank"><span>西游记</span></a>
+    <a href="/guoxue/103886/" target="_blank"><span>三国演义</span></a>
+    <a href="/guoxue/103784/" target="_blank"><span>水浒传</span></a>
+    <a href="/guoxue/101894/" target="_blank"><span>史记</span></a>
+    <a href="/guoxue/101916/" target="_blank"><span>资治通鉴</span></a>
+    <a href="/guoxue/104752/" target="_blank"><span>大学</span></a>
+
+    <a href="/guoxue/104747/" target="_blank"><span>中庸</span></a>
+    <a href="/guoxue/104734/" target="_blank"><span>论语</span></a>
+    <a href="/guoxue/104733/" target="_blank"><span>孟子</span></a>
+    <a href="/guoxue/104343/" target="_blank"><span>诗经</span></a>
+    <a href="/guoxue/104413/" target="_blank"><span>尚书</span></a>
+    <a href="/guoxue/104476/" target="_blank"><span>仪礼</span></a>
+    <a href="/guoxue/105094/" target="_blank"><span>周易</span></a>
+   
+    <a href="/guoxue/104557/" target="_blank"><span>春秋左传</span></a>
+    <a href="/guoxue/104655/" target="_blank"><span>尔雅</span></a>
+    <a href="/guoxue/104846/" target="_blank"><span>孝经</span></a>
+    <a href="/guoxue/102044/" target="_blank"><span>国语</span></a>
+    <a href="/guoxue/102282/" target="_blank"><span>战国策</span></a>
+    <a href="/guoxue/103124/" target="_blank"><span>老子</span></a>
+    <a href="/guoxue/103083/" target="_blank"><span>庄子</span></a>
+
+    <a href="/guoxue/102897/" target="_blank"><span>孙子兵法</span></a>
+    <a href="/guoxue/104299/" target="_blank"><span>楚辞</span></a>
+    <a href="/guoxue/103450/" target="_blank"><span>古文观止</span></a>
+    <a href="/guoxue/103345/" target="_blank"><span>吕氏春秋</span></a>
+    <a href="/guoxue/100151/" target="_blank"><span>世说新语</span></a>
+    <a href="/guoxue/103437/" target="_blank"><span>唐诗三百首</span></a>
+    <a href="/guoxue/" target="_blank"><span><label class="icon-arrow-right"></label> 更多</span></a>
+</div></div>
+		<div class="tab-panel" id="tab3">
+        <div class="brand-nav">
+        
+     <a href="http://book.sina.com.cn/" target="_blank"><div class="brand-nav-top brand-nav-frist"><img src="https://pic.dushu.com/201607/19/201607191316136967.png_50.jpg"><span>新浪读书</span></div></a>
+	 
+     <a href="http://union.dangdang.com/transfer/transfer.aspx?from=P-219836&backurl=http://book.dangdang.com/" target="_blank"><div class="brand-nav-top brand-nav-frist"><img src="https://pic.dushu.com/201607/20/201607201121451587.png_50.jpg"><span>当当</span></div></a>
+	 
+     <a href="http://p.yiqifa.com/n?k=gJWqYPBCrI6HWN3LrI6H2mLErI6HWEK7rn3s6EzS6mLO6nUH2mqerI6HWnwqWEMw6OBH2L--&t=http://book.jd.com/" target="_blank"><div class="brand-nav-top brand-nav-frist"><img src="https://pic.dushu.com/201607/20/201607201124536180.png_50.jpg"><span>京东</span></div></a>
+	 
+     <a href="https://www.amazon.cn?_encoding=UTF8&camp=536&creative=3200&linkCode=ur2&tag=dushu0f-23" target="_blank"><div class="brand-nav-top brand-nav-frist"><img src="https://pic.dushu.com/201607/20/201607201126042967.png_50.jpg"><span>亚马逊</span></div></a>
+	 
+     <a href="http://yuedu.163.com/" target="_blank"><div class="brand-nav-top brand-nav-frist"><img src="https://pic.dushu.com/201607/27/201607271404049981.png_50.jpg"><span>网易阅读</span></div></a>
+	 
+     <a href="http://www.duokan.com/" target="_blank"><div class="brand-nav-top brand-nav-frist"><img src="https://pic.dushu.com/201607/27/201607271424044516.png_50.jpg"><span>多看</span></div></a>
+	 
+     <a href="http://www.ireader.com/" target="_blank"><div class="brand-nav-top brand-nav-frist"><img src="https://pic.dushu.com/201607/27/201607271441148558.png_50.jpg"><span>掌阅</span></div></a>
+	 
+     <a href="https://read.douban.com/" target="_blank"><div class="brand-nav-top brand-nav-frist"><img src="https://pic.dushu.com/201607/27/201607271448372514.png_50.jpg"><span>豆瓣</span></div></a>
+	 
+     <a href="http://book.chaoxing.com/" target="_blank"><div class="brand-nav-top brand-nav-frist"><img src="https://pic.dushu.com/201607/27/201607271501287474.png_50.jpg"><span>超星</span></div></a>
+	 
+     <a href="http://www.qidian.com/" target="_blank"><div class="brand-nav-top brand-nav-frist"><img src="https://pic.dushu.com/201607/28/201607280915216464.png_50.jpg"><span>起点</span></div></a>
+	 
+     <a href="http://www.zongheng.com/" target="_blank"><div class="brand-nav-top brand-nav-frist"><img src="https://pic.dushu.com/201607/28/201607280916275584.png_50.jpg"><span>纵横</span></div></a>
+	 
+     <a href="http://www.nlc.cn/dsb_zyyfw/ts/tszyk/" target="_blank"><div class="brand-nav-top brand-nav-frist"><img src="https://pic.dushu.com/201607/28/201607281421112554.jpg_50.jpg"><span>国图</span></div></a>
+	 
+     <a href="http://www.cnki.net/" target="_blank"><div class="brand-nav-top brand-nav-frist"><img src="https://pic.dushu.com/201608/08/201608081447411059.png_50.jpg"><span>中国知网</span></div></a>
+	 
+     <a href="http://www.qikan.com.cn/" target="_blank"><div class="brand-nav-top brand-nav-frist"><img src="https://pic.dushu.com/201608/08/201608081505513722.png_50.jpg"><span>龙源期刊</span></div></a>
+	                
+    <a target="_blank" href="/daohang/"><div class="brand-nav-top brand-nav-frist"><img src="https://a.dushu.com/img/more.png"><span>查看更多</span></div></a>
+</div></div></div></div>
+<script type="text/javascript">jQuery(".tab").slide({ titCell: ".tab-head li", mainCell: ".tab-body" });</script>	
+</div></div></div>
+<div class="container margin-big-top padding-big-top">
+<div class="tit"><h3>读书资讯</h3>
+<div class="float-right">
+<ul class="bread margin-big-left">    
+    <li><a href="/news/85.html">新闻</a> </li>
+    <li><a href="/news/87.html">书讯</a> </li>
+    <li><a href="/news/88.html">书评</a> </li>
+    <li><a href="/news/99.html">历史</a> </li>
+    <li><a href="/news/86.html">文化</a> </li>
+    <li><a href="/news/100.html">艺术</a> </li>
+    <li><a href="/news/89.html">人物</a> </li>
+    <li><a href="/news/90.html">书摘</a></li>
+</ul></div></div>
+<div class="row-fluid border margin-big-top">
+
+  <div class="span6 padding-big"><div class="media clearfix">
+    <a href="/news/28714/" target="_blank"><img src="https://pic.dushu.com/202109/19/woht4ibdpk1.jpg_256.jpg" title="清宫服饰上的色彩你认得多少？杭州展“乾隆色谱”"></a>
+  <div class="media-body"><h3><a href="/news/28714/" target="_blank">清宫服饰上的色彩你认得多少？…</a></h3>
+    <p class="desc">宝蓝、浅蓝、月白、水红、鱼红、水绿、秋香……中国古代色谱你认得多少？光蓝色就多…</p>
+	<p><span class="icon-liulan"></span><span class="margin-right"> 31</span>
+	<span class="icon-zan"></span><span> 0</span>
+	</p></div></div></div>
+	 
+  <div class="span6 padding-big"><div class="media clearfix">
+    <a href="/news/28696/" target="_blank"><img src="https://pic.dushu.com/202109/19/g40qykojoaz.jpg_256.jpg" title="读央美收藏的任伯年，再看海派大家与“天才纵横”"></a>
+  <div class="media-body"><h3><a href="/news/28696/" target="_blank">读央美收藏的任伯年，再看海派…</a></h3>
+    <p class="desc">任颐（1840—1896）是中国近代美术史上著名的海派画家之一，与任熊、任薰并称“海上…</p>
+	<p><span class="icon-liulan"></span><span class="margin-right"> 28</span>
+	<span class="icon-zan"></span><span> 0</span>
+	</p></div></div></div>
+	 
+  <div class="span6 padding-big"><div class="media clearfix">
+    <a href="/news/28684/" target="_blank"><img src="https://pic.dushu.com/202109/19/ilecaqkjtj2.jpg_256.jpg" title="孤寂的美感——文人山水画之中“孤隐”的深层意识"></a>
+  <div class="media-body"><h3><a href="/news/28684/" target="_blank">孤寂的美感——文人山水画之中…</a></h3>
+    <p class="desc">中国的山水画是一种以描绘自然风景为主的绘画品种，但是它和西方的风景画却有着许多…</p>
+	<p><span class="icon-liulan"></span><span class="margin-right"> 25</span>
+	<span class="icon-zan"></span><span> 0</span>
+	</p></div></div></div>
+	 
+  <div class="span6 padding-big"><div class="media clearfix">
+    <a href="/news/28666/" target="_blank"><img src="https://pic.dushu.com/202109/18/vzrw5k1pigi.jpg_256.jpg" title="英雄赴难、山河为证，国图“中国记忆”项目纪念抗战岁月"></a>
+  <div class="media-body"><h3><a href="/news/28666/" target="_blank">英雄赴难、山河为证，国图“中…</a></h3>
+    <p class="desc">今天，是“九一八”事变90周年的日子。从2012年开始，国家图书馆“中国记忆”项目东…</p>
+	<p><span class="icon-liulan"></span><span class="margin-right"> 71</span>
+	<span class="icon-zan"></span><span> 0</span>
+	</p></div></div></div>
+	 
+</div></div>
+<div class="container margin-big-top padding-big-top">
+<div class="row">
+<div class="span24">
+<div class="tit"><h3>在线读书</h3>
+<a href="/lianzai/" class="float-right text-small">更多&gt;</a></div>
+<div class="border books-center">
+<ul>	
+	
+        <li>                   
+        <div class="img152"><a href="/showbook/127474/" target="_blank"><img alt="瓦尔登湖" src="https://a.dushu.com/img/n142.png" data-original="https://img.dushu.com/2017/11/25/0909042251025203741.jpg_142.jpg"></a></div>
+		<div class="bookname"><a href="/showbook/127474/" target="_blank">瓦尔登湖</a></div>
+		<div class="bookauthor">亨利&#183;戴维&…</div>
+        </li>     
+	
+        <li>                   
+        <div class="img152"><a href="/showbook/127473/" target="_blank"><img alt="国有企业严抓“四风”" src="https://a.dushu.com/img/n142.png" data-original="https://img.dushu.com/2014/03/30/0127021251219.jpg_142.jpg"></a></div>
+		<div class="bookname"><a href="/showbook/127473/" target="_blank">国有企业严抓“四风”</a></div>
+		<div class="bookauthor">本书编写组 编</div>
+        </li>     
+	
+        <li>                   
+        <div class="img152"><a href="/showbook/127472/" target="_blank"><img alt="回望来路" src="https://a.dushu.com/img/n142.png" data-original="https://img.dushu.com/_142.jpg"></a></div>
+		<div class="bookname"><a href="/showbook/127472/" target="_blank">回望来路</a></div>
+		<div class="bookauthor">周大新</div>
+        </li>     
+	
+        <li>                   
+        <div class="img152"><a href="/showbook/127471/" target="_blank"><img alt="最伟大的发明家和企业家：爱迪生" src="https://a.dushu.com/img/n142.png" data-original="https://img.dushu.com/2009/01/07/01333395397825.jpg_142.jpg"></a></div>
+		<div class="bookname"><a href="/showbook/127471/" target="_blank">最伟大的发明家和企业家：爱迪生…</a></div>
+		<div class="bookauthor">晓树 主编</div>
+        </li>     
+	
+        <li>                   
+        <div class="img152"><a href="/showbook/127470/" target="_blank"><img alt="楚辞" src="https://a.dushu.com/img/n142.png" data-original="https://img.dushu.com/2016/01/03/12153569378323252.jpg_142.jpg"></a></div>
+		<div class="bookname"><a href="/showbook/127470/" target="_blank">楚辞</a></div>
+		<div class="bookauthor">[汉] 刘向，[汉]…</div>
+        </li>     
+	
+        <li>                   
+        <div class="img152"><a href="/showbook/127469/" target="_blank"><img alt="二马" src="https://a.dushu.com/img/n142.png" data-original="https://img.dushu.com/2012/07/29/20224090087443.jpg_142.jpg"></a></div>
+		<div class="bookname"><a href="/showbook/127469/" target="_blank">二马</a></div>
+		<div class="bookauthor">老舍 著</div>
+        </li>     
+	
+        <li>                   
+        <div class="img152"><a href="/showbook/127468/" target="_blank"><img alt="西班牙文学：中古时期" src="https://a.dushu.com/img/n142.png" data-original="https://img.dushu.com/2017/06/16/09141320563164894.jpg_142.jpg"></a></div>
+		<div class="bookname"><a href="/showbook/127468/" target="_blank">西班牙文学：中古时期</a></div>
+		<div class="bookauthor">陈众议，宗笑飞 …</div>
+        </li>     
+	
+        <li>                   
+        <div class="img152"><a href="/showbook/127467/" target="_blank"><img alt="背影" src="https://a.dushu.com/img/n142.png" data-original="https://img.dushu.com/2020/03/28/17023684587705.jpg_142.jpg"></a></div>
+		<div class="bookname"><a href="/showbook/127467/" target="_blank">背影</a></div>
+		<div class="bookauthor">朱自清</div>
+        </li>     
+	
+        <li>                   
+        <div class="img152"><a href="/showbook/127466/" target="_blank"><img alt="影响中国历史的十篇政治美文" src="https://a.dushu.com/img/n142.png" data-original="https://img.dushu.com/2012/02/17/0216347526821.jpg_142.jpg"></a></div>
+		<div class="bookname"><a href="/showbook/127466/" target="_blank">影响中国历史的十篇政治美文</a></div>
+		<div class="bookauthor">梁衡 著</div>
+        </li>     
+	
+        <li>                   
+        <div class="img152"><a href="/showbook/127465/" target="_blank"><img alt="军中大医：黎介寿  黎磊石合传" src="https://a.dushu.com/img/n142.png" data-original="https://img.dushu.com/2013/06/23/00552822989044.jpg_142.jpg"></a></div>
+		<div class="bookname"><a href="/showbook/127465/" target="_blank">军中大医：黎介寿  黎磊石合传</a></div>
+		<div class="bookauthor">高铭华 编</div>
+        </li>     
+	
+        <li>                   
+        <div class="img152"><a href="/showbook/127464/" target="_blank"><img alt="诗词格律与创作" src="https://a.dushu.com/img/n142.png" data-original="https://img.dushu.com/2017/12/27/100416481932470.jpg_142.jpg"></a></div>
+		<div class="bookname"><a href="/showbook/127464/" target="_blank">诗词格律与创作</a></div>
+		<div class="bookauthor">夏方进 著</div>
+        </li>     
+	
+        <li>                   
+        <div class="img152"><a href="/showbook/127463/" target="_blank"><img alt="他们为何而来" src="https://a.dushu.com/img/n142.png" data-original="https://img.dushu.com/2018/07/27/102810695130525279.jpg_142.jpg"></a></div>
+		<div class="bookname"><a href="/showbook/127463/" target="_blank">他们为何而来</a></div>
+		<div class="bookauthor">张炜 著</div>
+        </li>     
+	
+        <li>                   
+        <div class="img152"><a href="/showbook/127462/" target="_blank"><img alt="读书的“风景”：大学生活之春花秋月" src="https://a.dushu.com/img/n142.png" data-original="https://img.dushu.com/2012/07/24/04382036916582.jpg_142.jpg"></a></div>
+		<div class="bookname"><a href="/showbook/127462/" target="_blank">读书的“风景”：大学生活之春花…</a></div>
+		<div class="bookauthor">陈平原 著</div>
+        </li>     
+	
+        <li>                   
+        <div class="img152"><a href="/showbook/127461/" target="_blank"><img alt="沉住气，吃硬饭" src="https://a.dushu.com/img/n142.png" data-original="https://img.dushu.com/2017/03/29/161359924367247420.jpg_142.jpg"></a></div>
+		<div class="bookname"><a href="/showbook/127461/" target="_blank">沉住气，吃硬饭</a></div>
+		<div class="bookauthor">王路 著</div>
+        </li>     
+
+</ul></div></div></div></div>
+<div class="container margin-big-top padding-big-top">
+<div class="row">
+<div class="span16">
+<div class="tit"><h3>推荐新书</h3>
+<a href="/book/" class="float-right text-small">更多&gt;</a></div>
+<div class="border books">
+<ul>			
+	
+          <li>
+           	<div class="img152"><a href="/book/13825458/" target="_blank"><img alt="沈曾植题海日楼藏碑帖集（上下 精）" src="https://a.dushu.com/img/n142.png" data-original="https://img.dushu.com/2021/04/16/15415080342365386.jpg_142.jpg"></a></div>
+            <div class="bookname"><a href="/book/13825458/" target="_blank">沈曾植题海日楼藏碑帖集（上下…</a></div>
+            <div class="bookauthor">刘丛 编</div>   
+         </li>
+	
+          <li>
+           	<div class="img152"><a href="/book/13824370/" target="_blank"><img alt="毛泽东诗词鉴赏辞典（线装本）" src="https://a.dushu.com/img/n142.png" data-original="https://img.dushu.com/2021/08/16/093451511144321237.jpg_142.jpg"></a></div>
+            <div class="bookname"><a href="/book/13824370/" target="_blank">毛泽东诗词鉴赏辞典（线装本）…</a></div>
+            <div class="bookauthor">上海辞书出版社文…</div>   
+         </li>
+	
+          <li>
+           	<div class="img152"><a href="/book/13813593/" target="_blank"><img alt="高韧性社会：应对不确定危机的八种能力" src="https://a.dushu.com/img/n142.png" data-original="https://img.dushu.com/2021/02/26/00405361863681542.jpg_142.jpg"></a></div>
+            <div class="bookname"><a href="/book/13813593/" target="_blank">高韧性社会：应对不确定危机的…</a></div>
+            <div class="bookauthor">周园 著</div>   
+         </li>
+	
+          <li>
+           	<div class="img152"><a href="/book/13813589/" target="_blank"><img alt="全球金融大变局" src="https://a.dushu.com/img/n142.png" data-original="https://img.dushu.com/2021/02/26/00400568963686519.jpg_142.jpg"></a></div>
+            <div class="bookname"><a href="/book/13813589/" target="_blank">全球金融大变局</a></div>
+            <div class="bookauthor">乔依德，何知仁 …</div>   
+         </li>
+	
+          <li>
+           	<div class="img152"><a href="/book/13811938/" target="_blank"><img alt="文人画的真性（16本）" src="https://a.dushu.com/img/n142.png" data-original="https://img.dushu.com/_142.jpg"></a></div>
+            <div class="bookname"><a href="/book/13811938/" target="_blank">文人画的真性（16本）</a></div>
+            <div class="bookauthor">朱良志</div>   
+         </li>
+	
+          <li>
+           	<div class="img152"><a href="/book/13811668/" target="_blank"><img alt="中国法学向何处去（第二版）" src="https://a.dushu.com/img/n142.png" data-original="https://img.dushu.com/2021/02/20/11265136261578.jpg_142.jpg"></a></div>
+            <div class="bookname"><a href="/book/13811668/" target="_blank">中国法学向何处去（第二版）</a></div>
+            <div class="bookauthor">邓正来</div>   
+         </li>
+	
+          <li>
+           	<div class="img152"><a href="/book/13806093/" target="_blank"><img alt="剑桥早期内亚史" src="https://a.dushu.com/img/n142.png" data-original="https://img.dushu.com/2021/02/03/09595333466467.jpg_142.jpg"></a></div>
+            <div class="bookname"><a href="/book/13806093/" target="_blank">剑桥早期内亚史</a></div>
+            <div class="bookauthor">（美）丹尼斯&#1…</div>   
+         </li>
+	
+          <li>
+           	<div class="img152"><a href="/book/13805857/" target="_blank"><img alt="生命政治：现代国家治理术" src="https://a.dushu.com/img/n142.png" data-original="https://img.dushu.com/2021/02/03/09501714746774.jpg_142.jpg"></a></div>
+            <div class="bookname"><a href="/book/13805857/" target="_blank">生命政治：现代国家治理术</a></div>
+            <div class="bookauthor">张凯</div>   
+         </li>
+	
+          <li>
+           	<div class="img152"><a href="/book/13805811/" target="_blank"><img alt="双循环：构建十四五新发展格局" src="https://a.dushu.com/img/n142.png" data-original="https://img.dushu.com/2021/02/03/0948442402150.jpg_142.jpg"></a></div>
+            <div class="bookname"><a href="/book/13805811/" target="_blank">双循环：构建十四五新发展格局…</a></div>
+            <div class="bookauthor">樊纲 著</div>   
+         </li>
+	
+          <li>
+           	<div class="img152"><a href="/book/13804287/" target="_blank"><img alt="给民办学校的N条建议" src="https://a.dushu.com/img/n142.png" data-original="https://img.dushu.com/2021/02/01/10093310129160.jpg_142.jpg"></a></div>
+            <div class="bookname"><a href="/book/13804287/" target="_blank">给民办学校的N条建议</a></div>
+            <div class="bookauthor">褚清源，王红顺</div>   
+         </li>
+
+</ul></div></div>
+<div class="span8 padding-left">	
+<div class="tit"><h3>图书推荐</h3></div>
+<div id="J_commend" class="books-right border">
+<ul>
+
+	<li>
+		<p style="display: none;" class="fold">
+		<a href="/book/13869544/" title="我身边的鸟儿：观鸟儿生活，品自然之趣" target="_blank"><i>01</i>我身边的鸟儿：观鸟儿生活，品自然之趣</a></p>
+		<div class="unfold" style="display: block;">
+			<i>01</i>
+			<div>
+				<div class="img104"><a href="/book/13869544/" title="我身边的鸟儿：观鸟儿生活，品自然之趣" target="_blank"><img src="https://img.dushu.com/2021/09/19/131223610142441910.jpg_104.jpg" alt="我身边的鸟儿：观鸟儿生活，品自然之趣"></a></div>
+				<h3><a href="/book/13869544/" title="我身边的鸟儿：观鸟儿生活，品自然之趣" target="_blank">我身边的鸟儿：观鸟儿生活，品自然之趣</a></h3>
+				<p></p>
+			</div>
+		</div>
+	</li>
+    
+	<li>
+		<p style="display: block;" class="fold">
+		<a href="/book/13869572/" title="亲爱的吾兄（上下）" target="_blank"><i>02</i>亲爱的吾兄（上下）</a></p>
+		<div class="unfold" style="display: none;">
+			<i>02</i>
+			<div>
+				<div class="img104"><a href="/book/13869572/" title="亲爱的吾兄（上下）" target="_blank"><img src="https://img.dushu.com/2021/09/19/13211276142447744.jpg_104.jpg" alt="亲爱的吾兄（上下）"></a></div>
+				<h3><a href="/book/13869572/" title="亲爱的吾兄（上下）" target="_blank">亲爱的吾兄（上下）</a></h3>
+				<p></p>
+			</div>
+		</div>
+	</li>
+    
+	<li>
+		<p style="display: block;" class="fold">
+		<a href="/book/13869540/" title="新贵（精）" target="_blank"><i>03</i>新贵（精）</a></p>
+		<div class="unfold" style="display: none;">
+			<i>03</i>
+			<div>
+				<div class="img104"><a href="/book/13869540/" title="新贵（精）" target="_blank"><img src="https://img.dushu.com/2021/09/19/13104444142444819.jpg_104.jpg" alt="新贵（精）"></a></div>
+				<h3><a href="/book/13869540/" title="新贵（精）" target="_blank">新贵（精）</a></h3>
+				<p></p>
+			</div>
+		</div>
+	</li>
+    
+	<li>
+		<p style="display: block;" class="fold">
+		<a href="/book/13869555/" title="二月" target="_blank"><i>04</i>二月</a></p>
+		<div class="unfold" style="display: none;">
+			<i>04</i>
+			<div>
+				<div class="img104"><a href="/book/13869555/" title="二月" target="_blank"><img src="https://img.dushu.com/2021/09/19/131359108142448085.jpg_104.jpg" alt="二月"></a></div>
+				<h3><a href="/book/13869555/" title="二月" target="_blank">二月</a></h3>
+				<p></p>
+			</div>
+		</div>
+	</li>
+    
+	<li>
+		<p style="display: block;" class="fold">
+		<a href="/book/13869571/" title="长安秘案录（上下）" target="_blank"><i>05</i>长安秘案录（上下）</a></p>
+		<div class="unfold" style="display: none;">
+			<i>05</i>
+			<div>
+				<div class="img104"><a href="/book/13869571/" title="长安秘案录（上下）" target="_blank"><img src="https://img.dushu.com/2021/09/19/132104405142447273.jpg_104.jpg" alt="长安秘案录（上下）"></a></div>
+				<h3><a href="/book/13869571/" title="长安秘案录（上下）" target="_blank">长安秘案录（上下）</a></h3>
+				<p></p>
+			</div>
+		</div>
+	</li>
+    
+	<li>
+		<p style="display: block;" class="fold">
+		<a href="/book/13869542/" title="麦克风试音" target="_blank"><i>06</i>麦克风试音</a></p>
+		<div class="unfold" style="display: none;">
+			<i>06</i>
+			<div>
+				<div class="img104"><a href="/book/13869542/" title="麦克风试音" target="_blank"><img src="https://img.dushu.com/2021/09/19/131204997142443783.jpg_104.jpg" alt="麦克风试音"></a></div>
+				<h3><a href="/book/13869542/" title="麦克风试音" target="_blank">麦克风试音</a></h3>
+				<p></p>
+			</div>
+		</div>
+	</li>
+    
+	<li>
+		<p style="display: block;" class="fold">
+		<a href="/book/13869626/" title="世界名画中的建筑" target="_blank"><i>07</i>世界名画中的建筑</a></p>
+		<div class="unfold" style="display: none;">
+			<i>07</i>
+			<div>
+				<div class="img104"><a href="/book/13869626/" title="世界名画中的建筑" target="_blank"><img src="https://img.dushu.com/2021/09/19/133946975142448917.jpg_104.jpg" alt="世界名画中的建筑"></a></div>
+				<h3><a href="/book/13869626/" title="世界名画中的建筑" target="_blank">世界名画中的建筑</a></h3>
+				<p></p>
+			</div>
+		</div>
+	</li>
+    
+	<li>
+		<p style="display: block;" class="fold">
+		<a href="/book/13869581/" title="道统、治统与科技：康熙皇帝与西方科学" target="_blank"><i>08</i>道统、治统与科技：康熙皇帝与西方科学</a></p>
+		<div class="unfold" style="display: none;">
+			<i>08</i>
+			<div>
+				<div class="img104"><a href="/book/13869581/" title="道统、治统与科技：康熙皇帝与西方科学" target="_blank"><img src="https://img.dushu.com/2021/09/19/13255780142449889.jpg_104.jpg" alt="道统、治统与科技：康熙皇帝与西方科学"></a></div>
+				<h3><a href="/book/13869581/" title="道统、治统与科技：康熙皇帝与西方科学" target="_blank">道统、治统与科技：康熙皇帝与西方科学</a></h3>
+				<p></p>
+			</div>
+		</div>
+	</li>
+    	
+	</ul>
+	<a href="/book/" class="more"><span class="icon-arrow-right"></span>查看更多</a>   	
+</div></div></div></div>
+<div class="container margin-big-top padding-big-top">
+<div class="row">
+<div class="span16">
+<div class="tit"><h3>国学/古籍</h3>
+<a href="/guoxue/" class="float-right text-small">更多&gt;</a></div>
+<div class="ebooks">
+<ul>
+    	
+         <li class="up">
+           <div class="book-info">
+           	<div class="img152 float-left margin-right"><a href="/guoxue/113421/" target="_blank"><img alt="至顺镇江志" src="https://a.dushu.com/img/n142.png" data-original="https://img.dushu.com/2017/05/15/20455250461187.jpg_142.jpg"></a></div>
+            <h3><a href="/guoxue/113421/" title="至顺镇江志" target="_blank">至顺镇江志</a></h3>
+            <p>元·脱因</p>
+            <p class="disc eps">　　暂缺简介...</p>
+            <p><a href="/guoxue/113421/" title="至顺镇江志" target="_blank">立即阅读  <span class="icon-jiantou-right text-little"></span></a></p>
+           </div>
+         </li>
+       	
+         <li class="up rt">
+           <div class="book-info">
+           	<div class="img152 float-left margin-right"><a href="/guoxue/113419/" target="_blank"><img alt="至大金陵新志" src="https://a.dushu.com/img/n142.png" data-original="https://img.dushu.com/2017/05/15/20443188751942.jpg_142.jpg"></a></div>
+            <h3><a href="/guoxue/113419/" title="至大金陵新志" target="_blank">至大金陵新志</a></h3>
+            <p>元·张铉</p>
+            <p class="disc eps">　　暂缺简介...</p>
+            <p><a href="/guoxue/113419/" title="至大金陵新志" target="_blank">立即阅读  <span class="icon-jiantou-right text-little"></span></a></p>
+           </div>
+         </li>
+       	
+         <li>
+           <div class="book-info">
+           	<div class="img152 float-left margin-right"><a href="/guoxue/113414/" target="_blank"><img alt="续修台湾府志" src="https://a.dushu.com/img/n142.png" data-original="https://img.dushu.com/2017/05/15/20395612994751.jpg_142.jpg"></a></div>
+            <h3><a href="/guoxue/113414/" title="续修台湾府志" target="_blank">续修台湾府志</a></h3>
+            <p>清·余文仪</p>
+            <p class="disc eps">　　暂缺简介...</p>
+            <p><a href="/guoxue/113414/" title="续修台湾府志" target="_blank">立即阅读  <span class="icon-jiantou-right text-little"></span></a></p>
+           </div>
+         </li>
+       	
+         <li class="rt">
+           <div class="book-info">
+           	<div class="img152 float-left margin-right"><a href="/guoxue/113408/" target="_blank"><img alt="福州府志乾隆本" src="https://a.dushu.com/img/n142.png" data-original="https://img.dushu.com/2017/05/15/20345852360673.jpg_142.jpg"></a></div>
+            <h3><a href="/guoxue/113408/" title="福州府志乾隆本" target="_blank">福州府志乾隆本</a></h3>
+            <p>清·徐景熹</p>
+            <p class="disc eps">　　暂缺简介...</p>
+            <p><a href="/guoxue/113408/" title="福州府志乾隆本" target="_blank">立即阅读  <span class="icon-jiantou-right text-little"></span></a></p>
+           </div>
+         </li>
+       
+</ul></div></div>
+<div class="span8 padding-left">	
+<div class="tit"><h3>阅读排行</h3></div>
+<div id="J_bang" class="books-right border" style="height:365px;">
+<ul>
+	
+	<li>
+		<p style="display: none;" class="fold">
+		<a href="/guoxue/100015/" title="九命奇冤" target="_blank"><i>01</i>九命奇冤</a></p>
+		<div class="unfold" style="display: block;">
+			<i>01</i>
+			<div>
+				<div class="img104"><a href="/guoxue/100015/" title="九命奇冤" target="_blank"><img src="https://img.dushu.com/2016/06/20/11322783616731.jpg_104.jpg" alt="九命奇冤"></a></div>
+				<h3><a href="/guoxue/100015/" title="九命奇冤" target="_blank">九命奇冤</a></h3>
+				<p>吴研人</p>
+			</div>
+		</div>
+	</li>
+    
+	<li>
+		<p style="display: block;" class="fold">
+		<a href="/guoxue/100014/" title="恨海" target="_blank"><i>02</i>恨海</a></p>
+		<div class="unfold" style="display: none;">
+			<i>02</i>
+			<div>
+				<div class="img104"><a href="/guoxue/100014/" title="恨海" target="_blank"><img src="https://img.dushu.com/2016/06/20/11311745021672.jpg_104.jpg" alt="恨海"></a></div>
+				<h3><a href="/guoxue/100014/" title="恨海" target="_blank">恨海</a></h3>
+				<p>吴趼人</p>
+			</div>
+		</div>
+	</li>
+    
+	<li>
+		<p style="display: block;" class="fold">
+		<a href="/guoxue/100013/" title="二十年目睹之怪现状" target="_blank"><i>03</i>二十年目睹之怪现状</a></p>
+		<div class="unfold" style="display: none;">
+			<i>03</i>
+			<div>
+				<div class="img104"><a href="/guoxue/100013/" title="二十年目睹之怪现状" target="_blank"><img src="https://img.dushu.com/2016/06/20/11301753849189.jpg_104.jpg" alt="二十年目睹之怪现状"></a></div>
+				<h3><a href="/guoxue/100013/" title="二十年目睹之怪现状" target="_blank">二十年目睹之怪现状</a></h3>
+				<p>吴趼人</p>
+			</div>
+		</div>
+	</li>
+    
+	<li>
+		<p style="display: block;" class="fold">
+		<a href="/guoxue/100006/" title="平山冷燕" target="_blank"><i>04</i>平山冷燕</a></p>
+		<div class="unfold" style="display: none;">
+			<i>04</i>
+			<div>
+				<div class="img104"><a href="/guoxue/100006/" title="平山冷燕" target="_blank"><img src="https://img.dushu.com/2016/06/03/10412381359649.jpg_104.jpg" alt="平山冷燕"></a></div>
+				<h3><a href="/guoxue/100006/" title="平山冷燕" target="_blank">平山冷燕</a></h3>
+				<p>荻岸散人</p>
+			</div>
+		</div>
+	</li>
+    
+	<li>
+		<p style="display: block;" class="fold">
+		<a href="/guoxue/100005/" title="三遂平妖传" target="_blank"><i>05</i>三遂平妖传</a></p>
+		<div class="unfold" style="display: none;">
+			<i>05</i>
+			<div>
+				<div class="img104"><a href="/guoxue/100005/" title="三遂平妖传" target="_blank"><img src="https://img.dushu.com/2016/06/20/11054418311038.jpg_104.jpg" alt="三遂平妖传"></a></div>
+				<h3><a href="/guoxue/100005/" title="三遂平妖传" target="_blank">三遂平妖传</a></h3>
+				<p>罗贯中</p>
+			</div>
+		</div>
+	</li>
+    		
+	</ul>
+	<a href="/guoxue/" class="more"><span class="icon-arrow-right"></span>查看更多</a>   	
+</div>
+</div>
+</div>
+</div>
+
+<div class="layout" id="footer">
+    <div class="container padding">
+        <div class="text-center">
+            <ul class="nav nav-inline">
+                <li><a href="/help/1587.html">关于读书</a> </li>
+                <li><a href="/help/1588.html">免责声明</a> </li>
+                <li><a href="/help/1589.html">读书目录</a> </li>
+                <li><a href="/help/1590.html">联系我们</a> </li>
+            </ul>
+        </div>
+        <div class="text-center height-big">Copyright © 读书网 www.dushu.com 2005-2020, All Rights Reserved.</div>
+        <div class="text-center height-big"><a href="http://www.beian.miit.gov.cn/">鄂ICP备15019699号</a> <img src="https://a.dushu.com/img/beian.png" style="vertical-align:middle;margin-left:10px;" /> 鄂公网安备 42010302001612号 <a href="https://www.12377.cn/jbxzxq/64d38691937611ebb858c9da04cf59d3_web.html?spm=zm1033-001.0.0.1.SOXBdI&smallHarmType=64d38691937611ebb858c9da04cf59d3"><img src="https://a.dushu.com/img/jubao.gif" style="vertical-align:middle;margin-left:10px;" /></a></div>
+    </div>
+</div>
+
+
+
+<script lang="javascript" type="text/javascript" src="https://a.dushu.com/js/lazyload.min.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        $(".img152 img").lazyload({ effect: "fadeIn" });
+        $(".brand-nav img").lazyload({ effect: "fadeIn" });
+        $('#J_bang').goList();
+    });
+</script>
+
+<script lang="javascript" type="text/javascript" src="https://a.dushu.com/js/autocomplete.min.js"></script>
+<script lang="javascript" type="text/javascript" src="https://a.dushu.com/js/common.min.js?v=201706"></script>
+</body>
+</html>
